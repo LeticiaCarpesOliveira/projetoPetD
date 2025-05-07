@@ -1,0 +1,216 @@
+@import url("../styles/style.css");
+
+body{
+    background-color: #EDEEF0;
+}
+
+header{
+    /* border: 2px solid red; */
+    height: 8vh;
+    padding: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+canvas{
+    /* border: 2px solid red; */
+    width: 8vw;
+}
+
+main{
+    /* border: 2px solid red; */
+    margin: 30px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerRegister{
+    /* border: 2px solid red; */
+    width: 50vw;
+    height: auto;
+    background-color: #D8D9DD;
+    padding: 20px 0 35px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formsRegister{
+    /* border: 2px solid blue; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formsRegister>h1{
+    font-family: "Denk One", sans-serif;
+    font-size: 32px;
+    color: #391010;
+    text-align: center;
+}
+
+.divRegister{
+    /* border: 2px solid blue; */
+    font-family: "Denk One", sans-serif;
+    font-weight: 500;
+}
+
+.divColumn{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.divRow{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+}
+
+.divRow>div{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+select{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+input, 
+select,
+input::placeholder{
+    font-family: "Denk One", sans-serif;
+}
+
+
+.inputLarge{
+    width: 350px;
+}
+
+.inputMedium{
+    width: 200px;
+}
+
+.inputSmall{
+    width: 150px;
+}
+
+
+.divbuttonRegister>button{
+    width: 150px;
+    padding: 10px;
+    font-family: "Denk One", sans-serif;
+    font-size: 16px;
+    background-color: #391010;
+    color: #EDEEF0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.divbuttonRegister>button:hover{
+    background-color: #000000;
+}
+
+
+
+/* TABLET */
+
+@media screen and (min-width:450px) and (max-width:835px) {
+
+    canvas{
+        /* border: 2px solid red; */
+        width: 10vw;
+    }
+
+    .containerRegister{
+        /* border: 2px solid red; */
+        width: 75vw;
+    }
+    
+    
+    .formsRegister>h1{
+        font-size: 24px;
+    }
+    
+    .divRow{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inputLarge{
+        width: 280px;
+    }
+    
+    .inputMedium{
+        width: 170px;
+    }
+
+    .inputSmall{
+        width: 140px;
+    }
+     
+}
+
+/* MOBILE */
+@media screen and (max-width:449px){
+
+    header{
+        justify-content: space-around;    
+    }
+
+    canvas{
+        /* border: 2px solid red; */
+        width: 15vw;
+    }
+
+    .containerRegister{
+        /* border: 2px solid red; */
+        width: 95vw;
+    }
+    
+    
+    .formsRegister>h1{
+        font-size: 24px;
+    }
+
+    .divRow{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .inputLarge{
+        width: 280px;
+    }
+    
+    .inputMedium{
+        width: 120px;
+    }
+
+    .inputSmall{
+        width: 120px;
+    }
+}
+
+
+

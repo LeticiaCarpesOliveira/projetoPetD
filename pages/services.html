@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/svg" href="../images/dog.svg">
+    <link rel="stylesheet" href="../styles/services.css">
+
+    <title>Serviços</title>
+</head>
+<body>
+    <main class="container-grid">
+
+            <h1 class="titleServices">Serviços</h1>
+
+        <section class="sectionMainServices">
+            <section class="sectionDivServices">
+                <div class="divServices">
+                    <img src="../images/BanhoeTosa.svg"></img>
+                    <h3>Banho e Tosa</h3>
+                </div>
+    
+                <div class="divServices">
+                    <img src="../images/ConsultaVeterinária.svg"></img>
+                    <h3>Consulta Veterinária</h3>
+                </div>
+    
+                <div class="divServices">
+                    <img src="../images/Adestramento.svg"></img>
+                    <h3>Adestramento</h3>
+                </div>
+            </section>
+
+            <section class="sectionFormServices">
+                <h1>Agendar</h1>
+
+                <form class="formReserve">
+                    <div class="formName">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Insira aqui seu nome">
+                    </div>
+
+                    <div class="formContact">
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Insira aqui seu telefone">
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Insira aqui seu e-mail">
+                        </div>
+                    </div>
+
+                    <div class="formService">
+                        <label for="servico">Tipo de Serviço</label>
+                        <select id="servico" name="servico">
+                            <option value="banho-e-tosa">Banho e Tosa</option>
+                            <option value="consulta-veterinaria">Consulta Veterinária</option>
+                            <option value="adestramento">Adestramento</option>
+                        </select>
+                    </div>
+                    
+                    <div class="formDateTime">
+                        <div>
+                            <label for="data">Data</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+
+                        <div>
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora" name="hora">
+                        </div>
+                    </div>
+
+                    <div class="buttonReserve">
+                        <button type="submit">Agendar</button>
+                    </div>
+                </form>
+            </section>   
+        </section>
+
+    </main>
+
+</body>
+
+</html>

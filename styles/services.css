@@ -1,0 +1,301 @@
+@import url("../styles/style.css");
+
+body{
+    background-color: #EDEEF0;
+}
+
+main{
+    /* border: 2px solid red; */
+    height: 90vh;
+}
+
+/* serviços da página */
+.titleServices{
+    /* border: 2px solid green; */
+    margin: 3vh 0 2vh 0;
+    font-family: "Denk One", sans-serif;
+    font-size: 50px;
+    color: #391010;
+    font-weight: 400;
+}
+
+
+.sectionMainServices{
+    /* border: 2px solid red; */
+    /* margin-top: 2vh; */
+    height: 84vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionDivServices{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divServices{
+    /* border: 5px solid blue; */
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divServices>h3{
+    font-family: "Denk One", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #391010;
+}
+
+.divServices>img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* form da página */
+.sectionFormServices{
+    /* border: 2px solid purple; */
+    width: 38vw;
+    padding: 0 2vw 0 2vw;
+    background-color: #D8D9DD;
+    border-radius: 15px;
+}
+
+.sectionFormServices>h1{
+    margin: 5vh 0 3vh 0;
+    text-align: center;
+    font-family: "Denk One", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #391010;
+}
+
+.formReserve{
+    /* border: 2px solid red; */
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+/* input nome */
+.formName,
+.formContact>div,
+.formService,
+.formDateTime>div{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilização global para inputs e select */
+label{
+    font-family: "Denk One", sans-serif;
+    margin-bottom: 1vh;
+    font-weight: 400;
+}
+
+input,
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input,
+select,
+input::placeholder{
+    font-family: "Denk One", sans-serif;
+}
+
+/* -------------------------------------------- */
+
+.formName>input{
+    width: 25vw;
+}
+
+/* inputs contato e inputs data/hora */
+.formContact,
+.formDateTime{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 15px;
+}
+
+.formContact>div>input,
+.formDateTime>div>input{
+    width: 15vw;
+}
+
+
+/* inputs serviço */
+.formService{
+    margin-top: 4vh;
+}
+
+.formService>select{
+    width: 25vw;
+}
+
+/* button agendar */
+.buttonReserve{
+    /* border: 2px solid red; */
+    /* margin-top: 5vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.buttonReserve>button{
+    width: 170px;
+    border: none;
+    background-color: #391010;
+    padding: 10px;
+    border-radius: 10px;
+
+    font-family: "Denk One", sans-serif;
+    color: #EDEEF0;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.buttonReserve>button:hover{
+    background-color: #000000;
+}
+
+@media screen and (min-width:450px) and (max-width:800px) {
+
+    .titleServices{
+        /* border: 2px solid green;  */
+        font-size:32px;
+    }
+
+
+
+    .sectionMainServices{
+        /* border: 2px solid red; */
+        height: auto;
+    }
+
+    .sectionDivServices{
+        /* border: 2px solid green; */
+        gap: 15px;
+    }
+
+
+    .divServices>h3{
+        font-size: 16px;
+    }
+
+    .divServices>img{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* form da página */
+    .sectionFormServices{
+        /* border: 2px solid purple; */
+        width: 38vw;
+        padding: 0 2vw 0 2vw;
+        background-color: #EDEEF0;
+        border-radius: 15px;
+    }
+
+    .formReserve{
+        justify-content: space-evenly;
+    }
+
+    .sectionFormServices>h1{
+        font-size: 24px;
+    }
+
+
+    /* -------------------------------------------- */
+
+    .buttonReserve>button{
+        width: 120px;
+        /* padding: 8px; */
+    }
+
+}
+
+
+@media screen and (max-width:449px){
+
+
+.titleServices{
+    /* border: 2px solid green;  */
+    font-size: 32px;
+}
+
+
+.sectionMainServices{
+    /* border: 2px solid red; */
+    height: 79vh;
+    flex-direction: column;
+}
+
+.divServices{
+    /* border: 5px solid blue; */
+    width: 95vw;
+}
+
+.divServices>h3{
+    font-size: 18px;
+}
+
+.divServices>img{
+    width: 130px;
+    height: 130px;
+}
+
+
+/* form da página */
+.sectionFormServices{
+    /* border: 2px solid purple; */
+    width: 95vw;
+}
+
+.sectionFormServices>h1{
+    font-size: 24px;
+}
+
+
+.formReserve{
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+/* -------------------------------------------- */
+
+.formName>input{
+    width: 80vw;
+}
+
+
+.formContact>div>input,
+.formDateTime>div>input{
+    width: 40vw;
+}
+
+
+
+.formService>select{
+    width: 80vw;
+}
+
+
+
+.buttonReserve>button{
+    width: 120px;
+}
+
+}

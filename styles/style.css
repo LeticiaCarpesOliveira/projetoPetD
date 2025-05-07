@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DENK ONE  */
+/* font-family: "Denk One", sans-serif; */
+
+/* POPPINS */
+/* font-family: "Poppins", sans-serif; */
+
+body{
+    background-color: #D8D9DD;
+}
+
+.container-grid{
+    margin: auto;
+    width: 80vw;
+}
+
+/* cabeçalho da página */
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleHeader{
+    font-family: "Denk One", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #391010;
+}
+
+.navHeader{
+    display: flex;
+    align-items: center;
+}
+
+.navHeader>ul{
+    /* border: 2px solid red; */
+    /* width: 25vw; */
+    display: flex;
+    gap: 25px;
+    font-family: "Poppins", sans-serif; 
+    font-size: 18px;
+}
+
+.navHeader>ul>li{
+    list-style-type: none;
+}
+
+.navHeader>ul>li>a{
+    text-decoration:none;
+    color:#000000;
+    font-weight: 600;
+}
+
+.navHeader>ul>li>a:hover{
+    text-decoration:underline;
+    font-weight: 700;
+}
+
+.buttonHeader{
+    width: 150px;
+    border: none;
+    background-color: #391010;
+    padding: 8px;
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonHeader>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.buttonHeader:hover{
+    background-color: #000000;
+}
+
+/* home da página */
+.sectionMainBanner{
+    /* border: 2px solid red; */
+    height: 85vh;
+    display: flex;
+}
+
+.articleBanner{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.articleBanner>h1{
+    width: 25vw;
+    font-family: "Denk One", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #391010;
+}
+
+.articleBanner>p{
+    width: 35vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.divImgBanner{
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imgBanner{
+    width: 100%;
+    height: 100%;
+}
+
+/* Produtos da página */
+.sectionMainProduct{
+    /* border: 2px solid red; */
+    height: 100vh;
+    background-color: #EDEEF0;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleProduct{
+    /* border: 2px solid blue; */
+    margin-top: 6vh;
+    font-family: "Denk One", sans-serif;
+    font-size: 50px;
+    color: #391010;
+    font-weight: 400;
+}
+
+.containerProduct{
+    /* border: 2px solid green; */
+    height: 70vh;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+.divCardProduct{
+    /* border: 2px solid yellow; */
+    width: 500px;
+    height: 400px;
+
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    box-shadow: #00000010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.divCardProduct>img{
+    width: 300px;
+    height: 250px;
+}
+
+
+.divCardProduct>h3{
+    font-family: "Denk One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.divCardProduct>button{
+    width: 180px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+
+    font-family: "Denk One", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.divCardProduct>button:hover{
+    background-color: #391010;
+    color: #ffffff;
+}
+
+/* estilização do scroll */
+
+.containerProduct::-webkit-scrollbar {
+   height: 13px;
+  }
+  
+  .containerProduct::-webkit-scrollbar-track {
+    background: #AEADB3;
+  }
+  
+
+  .containerProduct::-webkit-scrollbar-thumb {
+    background: #87868A;
+    /* border-radius: 5px;  */
+  }
+  
+  .containerProduct::-webkit-scrollbar-thumb:hover {
+    background: #00000088;
+  }
+
+  .divOptionsProduct{
+    padding: 2vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .divOptionsProduct>a{
+    font-family: "Denk One", sans-serif;
+    font-size: 18px;
+    color: #391010;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Seção IFRAME */
+
+  .containerIframe{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .divTextIframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divTextIframe>p{
+    /* border: 2px solid red; */
+    margin: 5vh 0 5vh 0;
+    font-family: "Denk One", sans-serif;
+    font-size: 38px;
+    color: #391010;
+    text-align: center;
+  }
+
+  .divTextIframe>a>button{
+    padding: 10px;
+    width: 150px;
+    font-family: "Denk One", sans-serif;
+    font-size: 18px;
+    background-color: #391010;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .divTextIframe>a>button:hover{
+    background-color: #000000;
+  }
+
+  /* Container Mídia */
+
+  .containerMedia{
+    /* border: 2px solid red; */
+    height: 50vh;
+    background-color: #EDEEF0;
+    display: flex;
+  }
+
+  .media{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .media>iframe{
+    width: 35vw;
+    height: 30vh;
+  }
+
+  .divMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .divMedia>h1{
+    text-align: center;
+    font-family: "Denk One", sans-serif;
+    font-size: 32px;
+    color: #391010;
+  }
+
+
+  audio::-webkit-media-controls-panel { /* Estiliza o painel de controles (webkit - Chrome, Safari) */
+    background-color: #D8D9DD;
+  }
+  
+  /* Footer */
+
+  .divFooterPage{
+    height: 5vh;
+    background-color: #221E1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divFooterPage>p{
+    font-family: "Denk One", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .bannerCat{
+    /* border: 2px solid red; */
+    background-color: #221E1F;
+    width: 100%;
+  }
+
+ .bannerCat>img{
+    width: 100%;
+    opacity: 20%;
+ }
+
+/* TABLET */
+@media screen and (min-width:450px) and (max-width:800px) {
+
+    .container-grid{
+        width: 90vw;
+    }
+
+    /* cabeçalho da página */
+    .titleHeader{
+        font-size: 32px;
+    }
+
+    .navHeader>ul{
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .buttonHeader{
+        width: 100px;
+    }
+
+
+    /* home da página */
+    .sectionMainBanner{
+        /* border: 2px solid red; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .articleBanner{
+        /* border: 2px solid blue; */
+        align-items: center;
+        gap: 25px;
+    }
+
+    .articleBanner>h1{
+        width: 90vw;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .articleBanner>p{
+        width: 90vw;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .divImgBanner{
+        /* border: 2px solid green; */
+        width: 80%;
+    }
+
+
+
+    /* Produtos da página */
+    .titleProduct{
+        /* border: 2px solid blue; */
+        font-size: 36px;
+    }
+
+    .containerProduct{
+        height: 60vh;
+    }
+
+
+    .divCardProduct{
+        /* border: 2px solid yellow; */
+        width: 450px;
+        height: 350px;
+    }
+
+    .divCardProduct>img{
+        width: 250px;
+        height: 200px;
+    }
+
+
+    .divCardProduct>h3{
+        font-size: 18px;
+    }
+
+    .divCardProduct>button{
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .divCardProduct>button:hover{
+        background-color: #391010;
+        color: #ffffff;
+    }
+
+
+    .divOptionsProduct>a{
+        font-size: 16px;
+    }
+
+    /* Seção IFRAME */
+
+    .divTextIframe>p{
+        /* border: 2px solid red; */
+        font-size: 24px;
+      }
+
+    /* Container Mídia */
+
+
+    .media{
+        /* border: 2px solid red; */
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .media>iframe{
+        width: 55vw;
+        height: 25vh;
+    }
+
+    .divMedia{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Footer */
+
+    .divFooterPage>p{
+        font-size: 16px;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width:449px){
+
+.container-grid{
+    width: 95vw;
+}
+
+
+.titleHeader{
+    font-size: 24px;
+}
+
+
+.navHeader>ul{
+    /* border: 2px solid red; */
+    gap: 10px; 
+    font-size: 15px;
+}
+
+
+.buttonHeader{
+    width: 80px;
+    font-size: 12px;
+}
+
+
+/* home da página */
+.sectionMainBanner{
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+.articleBanner>h1{
+    width: 95vw;
+    font-size: 24px;
+    text-align: center;
+}
+
+.articleBanner>p{
+    width: 95vw;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.titleProduct{
+    /* border: 2px solid blue; */
+    font-size: 32px;
+}
+
+
+.divCardProduct{
+    /* border: 2px solid yellow; */
+    width: 450px;
+    height: 350px;
+}
+
+.divCardProduct>img{
+    width: 250px;
+    height: 200px;
+}
+
+
+.divCardProduct>h3{
+    font-size: 18px;
+}
+
+.divCardProduct>button{
+    width: 120px;
+    font-size: 15px;
+}
+
+.divOptionsProduct>a{
+   font-size: 16px;
+
+  }
+
+/* Seção IFRAME */
+
+  .divTextIframe>p{
+    /* border: 2px solid red; */
+    font-size: 20px;
+  }
+
+  /*IFRAME*/
+  .containerIframe{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+/* Container Mídia */
+
+.containerMedia{
+    height: 60vh;
+}
+
+.media{
+    /* border: 2px solid red; */
+    flex-direction: column;
+    gap: 30px;
+}
+
+.media>iframe{
+     width: 70vw;
+     height: 25vh;
+}
+
+.divMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divMedia>h1{
+    font-size: 24px;
+  }
+
+ /* Footer */
+
+ .divFooterPage>p{
+    font-size: 14px;
+}
+
+}
+
+
+

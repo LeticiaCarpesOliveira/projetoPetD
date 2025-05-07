@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/svg" href="../images/dog.svg">
+    <link rel="stylesheet" href="../styles/register.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    
+
+    <header>
+        <a href="../home.html"><h1 class="titleHeader">PetD</h1></a>
+
+        <canvas id="canvasLogo" width="100" height="100"></canvas>
+    </header>
+
+    <main>
+        <section class="containerRegister container-grid">
+            <form action="#" class="formsRegister">
+                <h1>Cadastro Do Cliente</h1>
+    
+                <div class="divRegister divColumn">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" placeholder="Insira seu Nome Completo" class="inputLarge" required>
+                </div>
+    
+                <div class="divRegister divRow">
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" size="11" maxlength="11" placeholder="___.___.___-__" class="inputMedium" required>
+                    </div>
+                    
+                    <div>
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" class="inputSmall">
+                    </div>
+                    
+                </div>
+    
+
+    
+                <div class="divRegister divColumn">
+                    <label for="tel">Tel.:</label>
+                    <input type="tel" placeholder="Insira seu Telefone" size="11" maxlength="11" class="inputMedium" required>
+                </div>
+    
+                <div class="divRegister divColumn">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Insira seu E-mail" class="inputLarge" required>
+                </div>
+    
+                <div class="divRegister divColumn">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" placeholder="Insira seu Endereço" class="inputLarge">
+                </div>
+            </form>
+        </section>
+    
+        <section class="containerRegister container-grid">
+            <form action="#" class="formsRegister">
+                <h1>Cadastro Do Pet</h1>
+    
+                <div class="divRegister divColumn">
+                    <label for="nomePet">Nome do Pet:</label>
+                    <input type="text" placeholder="Insira o Nome do seu Pet" class="inputLarge" required>
+                </div>
+    
+                <div class="divRegister divRow">
+                    <div>
+                        <label for="tipoAnimal">Tipo:</label>
+                        <select name="tipoAnimal" id="tipoAnimal" class="inputSmall" required>
+                            <option value="tipoAnimal">Selecione</option>
+                            <option value="tipoAnimal">Cachorro</option>
+                            <option value="tipoAnimal">Gato</option>
+                            <option value="tipoAnimal">Outro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="dataAnimal">Data de Nascimento:</label>
+                        <input type="date" class="inputSmall">
+                    </div> 
+                </div>
+
+                <div class="divRegister divColumn">
+                    <label for="raca">Raça:</label>
+                    <input type="text" placeholder="Insira a Raça do seu Animal" class="inputLarge">
+                </div>
+
+                <div class="divRegister divColumn">
+                    <label for="sexo">Sexo do Pet:</label>
+                    <input type="text" placeholder="Insira o sexo do Animal" class="inputMedium">
+                </div>
+            </form>
+        </section>
+
+        <div class="divbuttonRegister">
+            <button type="submit">Enviar</button>
+        </div>
+    </main>
+
+    <script src="../scripts/logo.js"></script>
+
+</body>
+
+</html>
